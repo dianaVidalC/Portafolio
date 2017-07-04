@@ -1,13 +1,44 @@
 body{
-    background-color: #eeeeee;
+    background-color: #90a4ae;
     font-family: 'Lato', sans-serif;
-    color: #757575 ;
+    color: #fff ;
 }
 
 nav{
     background-color:transparent!important;
 }
 
+.bordes{
+    border: 2px solid #fff;
+}
+
+.img-padding{
+    padding:0.5rem;
+}
+#inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/img/programacion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
 #about{
     padding: 4rem;
+}
+
+#proyectos{
+    background-image: url("../assets/img/programacionweb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:40rem;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
