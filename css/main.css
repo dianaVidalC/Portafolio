@@ -1,19 +1,13 @@
 body{
-    background-color: #cfd8dc ;
-    font-family: 'Fresca', sans-serif;
-    color: #a1887f;
+    background-color: #eeeeee;
+    font-family: 'Lato', sans-serif;
+    color: #757575 ;
 }
 
-.home{
-    background-image: url("../assets/img/desarrolladores-web.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
+nav{
+    background-color:transparent!important;
 }
 
-.foto{
-    background-image:url("../assets/img/Reacciones-programadores-portada.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
+#about{
+    padding: 4rem;
 }
