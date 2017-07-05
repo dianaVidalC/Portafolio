@@ -1,11 +1,5 @@
 body{
-    background-color: #90a4ae;
     font-family: 'Lato', sans-serif;
-    color: #fff ;
-}
-
-nav{
-    background-color:transparent!important;
 }
 
 .bordes{
@@ -23,20 +17,27 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     height: 40rem;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
 }
 #about{
     padding: 4rem;
 }
 
 #proyectos{
-    background-image: url("../assets/img/programacionweb.jpg");
+    padding-top: 2rem;
+    background-image: url("../assets/img/metal-fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height:40rem;
 }
-
+.material-placeholder{
+    display:inline-block!important;
+}
+.materialboxed{
+    height: 20rem !important;
+    width: 20rem;
+}
 #contacto{
     display: flex;
     flex-direction: column;
