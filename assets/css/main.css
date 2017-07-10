@@ -6,9 +6,15 @@ body{
   border: 2px solid #fff;
 }
 
+.logo{
+  width: 6rem;
+  padding-left: 2rem;
+
+}
 .img-padding{
   padding:0.5rem;
 }
+
 #inicio{
   display: flex;
   justify-content: center;
