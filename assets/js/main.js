@@ -4,4 +4,5 @@
 'use strict';
 $(_=>{
     $(".dropdown-button").dropdown();
+    $('.parallax').parallax();
 })

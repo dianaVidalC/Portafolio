@@ -6,11 +6,56 @@ body{
   border: 2px solid #fff;
 }
 
-.logo{
+.logo {
   width: 6rem;
   padding-left: 2rem;
-
 }
+
+.nav-color{
+  background-color: #02202F;
+}
+.titulo-coder{
+  position: absolute;
+}
+
+.titulo-coder h1{
+  font:normal 60pt Arial;
+  color:#FFFFFF;
+  text-shadow: 0 1px 0 #ccc,
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+}
+
+.titulo-coder h4{
+  font:normal 40pt Arial;
+  color:#FFFFFF;
+  text-shadow: 0 1px 0 #ccc,
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+}
+
+.parallax-container{
+  width: 100%;
+}
+
 .img-padding{
   padding:0.5rem;
 }
@@ -19,13 +64,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/programacion.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 40rem;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
 }
+
 #about{
   padding: 4rem;
 }
