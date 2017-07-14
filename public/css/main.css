@@ -1,3 +1,6 @@
+html, body, .block {
+  height: 100%; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
 
@@ -8,11 +11,21 @@ body {
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-  .inicio .inicio__titulo {
-    position: absolute; }
+  .inicio .inicio__divFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .inicio .inicio__divFlex .titulo {
+      font-family: "Philosopher", sans-serif; }
 
 .about {
   padding: 6rem 2rem; }
+
+nav .logo-up {
+  width: 2.5rem;
+  margin: 0.2rem 1.7rem; }
+nav .open {
+  display: block; }
 
 #proyectos {
   padding-top: 2rem;
@@ -83,5 +96,9 @@ body {
 .card-footer ul li i {
   font-size: 2em;
   color: #3F51B5; }
+
+.active {
+  background-color: #2C3E50;
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
