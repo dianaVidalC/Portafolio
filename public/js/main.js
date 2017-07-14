@@ -7,12 +7,9 @@ $(_=>{
         belowOrigin: true
     });
     $('.inicio').css({"height": $(window).height() + 'px'});
-    $('ul.tabs').tabs();
-
-    $('.scrollspy').scrollSpy();
 
     $(".button-collapse").sideNav();
-
+    $('.animate').animate()
     $('.descarga').on('click',_=>{
         document.location="https://drive.google.com/file/d/0B8DCWyMbksMoMEwwU1FSTDRaTkxpWHNkWW90S1NjLWVGSVcw/view?usp=sharing";
     })

@@ -1,9 +1,7 @@
-body{
-  font-family: 'Lato', sans-serif;
-}
+$font-titles: 'Philosopher', sans-serif;
 
-.bordes{
-  border: 2px solid #fff;
+body{
+  font-family: 'Open Sans', sans-serif;
 }
 
 .inicio {
@@ -16,10 +14,6 @@ body{
   .inicio__titulo {
     position: absolute;
   }
-}
-
-.parallax-container{
-  width: 100%;
 }
 
 .about{

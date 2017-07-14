@@ -1,8 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif; }
-
-.bordes {
-  border: 2px solid #fff; }
+  font-family: 'Open Sans', sans-serif; }
 
 .inicio {
   display: flex;
@@ -13,9 +10,6 @@ body {
   background-size: cover; }
   .inicio .inicio__titulo {
     position: absolute; }
-
-.parallax-container {
-  width: 100%; }
 
 .about {
   padding: 6rem 2rem; }
