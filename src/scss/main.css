@@ -1,24 +1,76 @@
-body {
-  font-family: 'Lato', sans-serif; }
+* {
+  margin: 0;
+  padding: 0; }
 
-.bordes {
-  border: 2px solid #fff; }
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #152933; }
+
+.back-color {
+  background-color: #68050b; }
 
 .inicio {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+  padding: 5.5rem;
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-  .inicio .inicio__titulo {
-    position: absolute; }
+  .inicio .inicio__divFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .inicio .inicio__texto {
+    display: flex;
+    height: 100px;
+    width: auto;
+    font-size: 16px;
+    line-height: 40px;
+    overflow: hidden; }
+    .inicio .inicio__texto .titulo {
+      font-family: "Philosopher", sans-serif; }
+    .inicio .inicio__texto .animado {
+      animation: cambiar 7s infinite; }
 
-.parallax-container {
-  width: 100%; }
-
+@keyframes cambiar {
+  0% {
+    margin-top: 0; }
+  20% {
+    margin-top: 0; }
+  25% {
+    margin-top: -90px; }
+  50% {
+    margin-top: -90px; }
+  55% {
+    margin-top: -180px; }
+  80% {
+    margin-top: -180px; }
+  85% {
+    margin-top: -90px; }
+  95% {
+    margin-top: -90px; }
+  100% {
+    margin-top: 0; } }
+/*about*/
 .about {
   padding: 6rem 2rem; }
+  .about .thumb {
+    border: 1px solid #152933;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px; }
+  .about .thumb:hover {
+    box-shadow: 0 0 2px 1px rgba(21, 41, 51, 0.5); }
+
+nav .logo-up {
+  width: 2.5rem;
+  margin: 0.2rem 1.7rem; }
+nav .open {
+  display: block; }
 
 #proyectos {
   padding-top: 2rem;
@@ -89,5 +141,13 @@ body {
 .card-footer ul li i {
   font-size: 2em;
   color: #3F51B5; }
+
+.active {
+  background-color: #2C3E50;
+  color: #fff; }
+
+/*contacto*/
+.icon-up {
+  background-color: #e80c19 !important; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,32 +1,82 @@
-$font-titles: 'Philosopher', sans-serif;
+@import "_color";
+@import "_fuente";
+$flex:flex;
 
-html, body, .block {
-  height: 100%;
+*{
+  margin:0;
+  padding:0;
 }
 
 body{
   font-family: 'Open Sans', sans-serif;
+  color: $color-text;
 }
 
+.back-color{
+  background-color: $color-red;
+}
 .inicio {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+  padding: 5.5rem;
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
   .inicio__divFlex {
-    display: flex;
+    display: $flex;
     flex-direction: column;
     align-items: center;
+  }
+  .inicio__texto{
+    display: $flex;
+    height: 100px;
+    width : auto;
+    font-size: 16px;
+    line-height: 40px;
+    overflow: hidden;
     .titulo{
       font-family: $font-titles;
+    }
+    .animado{
+      animation: cambiar 7s infinite;
     }
   }
 }
 
+@keyframes cambiar {
+  0%{margin-top: 0;}
+  20%{margin-top: 0;}
+
+  25%{margin-top: -90px;}
+  50%{margin-top: -90px;}
+
+  55%{margin-top: -180px;}
+  80%{margin-top: -180px;}
+
+  85%{margin-top: -90px;}
+  95%{margin-top: -90px;}
+
+  100%{margin-top: 0;}
+}
+
+/*about*/
 .about{
   padding: 6rem 2rem;
+  .thumb{
+    border: 1px solid $color-text;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+
+  .thumb:hover {
+    box-shadow: 0 0 2px 1px rgba(21, 41, 51, 0.5);
+  }
 }
 
 nav {
@@ -124,4 +174,10 @@ nav {
 .active{
   background-color: #2C3E50;
   color:#fff;
+}
+
+/*contacto*/
+
+.icon-up{
+  background-color: $color-up!important;
 }
