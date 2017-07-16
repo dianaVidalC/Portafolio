@@ -32,5 +32,10 @@ $(_=>{
         } else {
             $('.btn-up').slideUp(300);
         }
+        if($(this).scrollTop>=355){
+            $('.logo-hide').removeClass('hide');
+        }else{
+            $('.logo-hide').addClass('hide');
+        }
     });
 })
