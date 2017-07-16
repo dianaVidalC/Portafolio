@@ -7,7 +7,7 @@ body {
   color: #152933; }
 
 .back-color {
-  background-color: #824e3b; }
+  background-color: rgba(172, 122, 134, 0.5); }
 
 .inicio {
   display: flex;
@@ -17,7 +17,8 @@ body {
   padding: 5.5rem;
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  color: #5E3A43; }
   .inicio .inicio__divFlex {
     display: flex;
     flex-direction: column;
@@ -148,6 +149,6 @@ nav .open {
 
 /*contacto*/
 .icon-up {
-  background-color: #e80c19 !important; }
+  background-color: #7AAB81 !important; }
 
 /*# sourceMappingURL=main.css.map */

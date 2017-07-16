@@ -24,7 +24,7 @@ body{
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
+  color: $color-title;
   .inicio__divFlex {
     display: $flex;
     flex-direction: column;
