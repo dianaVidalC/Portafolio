@@ -9,8 +9,6 @@ $(_=>{
 
     $(".button-collapse").sideNav();
 
-    /*animacion logo*/
-
     /* descarga de cv*/
 
     $('.descarga').on('click',_=>{

@@ -8,24 +8,30 @@ $flex:flex;
 }
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-titles;
   color: $color-text;
 }
 
 .back-color{
   background-color: $color-nav;
 }
+
+.size-text{
+  font-size: 1.14rem;
+}
+
 .inicio {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
-  padding: 5.5rem;
+  height: 40rem;
+  width: 100%;
+  color: $color-title;
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: $color-title;
   .inicio__divFlex {
+    position: absolute;
     display: $flex;
     flex-direction: column;
     align-items: center;
@@ -37,9 +43,6 @@ body{
     font-size: 16px;
     line-height: 40px;
     overflow: hidden;
-    .titulo{
-      font-family: $font-titles;
-    }
     .animado{
       animation: cambiar 7s infinite;
     }
@@ -89,95 +92,125 @@ nav {
   }
 }
 
-#proyectos{
+.proyectos {
   padding-top: 2rem;
   overflow: auto;
-}
-.material-placeholder{
-  display:inline-block!important;
-}
-.materialboxed{
-  height: 20rem !important;
-  width: 20rem;
-}
-#contacto{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .proyectos__padd{
+    padding:4rem;
+  }
+  .card {
+    background-color: #f4f4f4;
+    width: 300px;
+    margin: 10px auto;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.7);
 
-.card {
-  background-color: #f4f4f4;
-  width: 300px;
-  margin: 10px auto;
-  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
-}
+    .card-header {
+      overflow: hidden;
+      width: 100%;
+      max-height: 200px;
+    }
 
-.card-header {
-  overflow: hidden;
-  width: 100%;
-  max-height: 200px;
-}
+    .card-header img {
+      width: 100%;
+    }
 
-.card-header img{
-  width: 100%;
-}
+    .card-content {
+      width: 85%;
+      margin: 35px auto;
+    }
 
-.card-content {
-  width: 85%;
-  margin: 35px auto;
-}
+    .card-content h3 {
+      font-size: 25px;
+      margin-bottom: 0;
+      color: #303F9F;
+      font-family: 'Montserrat', sans-serif;
+    }
 
-.card-content h3 {
-  font-size: 25px;
-  margin-bottom: 0;
-  color: #303F9F;
-  font-family: 'Montserrat', sans-serif;
-}
+    .card-content h4 {
+      font-size: 14px;
+      margin-top: 0;
+      color: #FF5252;
+      font-family: 'Montserrat', sans-serif;
+    }
 
-.card-content h4 {
-  font-size: 14px;
-  margin-top: 0;
-  color: #FF5252;
-  font-family: 'Montserrat', sans-serif;
-}
+    .card-content p {
+      color: #727272;
+      font-size: 12px;
+      font-family: 'Open Sans', sans-serif;
+    }
 
-.card-content p {
-  color: #727272;
-  font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
-}
+    .card-footer {
+      border-top: solid 1px #B6B6B6;
+      padding: 5px;
+    }
 
-.card-footer {
-  border-top: solid 1px #B6B6B6;
-  padding: 5px;
-}
+    .card-footer ul {
+      padding: 0;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
 
-.card-footer ul {
-  padding: 0;
-  width: 90%;
-  margin: auto;
-  text-align: center;
-}
+    .card-footer ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 5px;
+    }
 
-.card-footer ul li{
-  display: inline-block;
-  list-style: none;
-  margin: 5px;
-}
-
-.card-footer ul li i {
-  font-size: 2em;
-  color: #3F51B5;
+    .card-footer ul li i {
+      font-size: 2em;
+      color: #3F51B5;
+    }
+  }
 }
 
 .active{
   background-color: #2C3E50;
   color:#fff;
 }
+/*hability*/
 
-/*contacto*/
+.conocimientos {
+  padding: 4rem 2rem;
+  background-color: $color-title;
+  color: #fff;
 
-.icon-up{
-  background-color: $color-up!important;
+  .container-skill {
+    padding-top: 2rem;
+    .skill {
+
+      .size-img {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media ("max-width:760px") {
+  .container-skill{
+    padding: 1rem 4.5rem;
+  }
+}
+/*contact*/
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:2rem;
+  background-color: $color-nav;
+  .contacto__parrafo{
+    font-size: 1.4rem;
+  }
+  .descarga{
+    background-color: #315E37;
+    margin:2rem;
+  }
+  .icon-up{
+    background-color: $color-up;
+  }
+}
+
+footer{
+  height:5rem;
+  background-color: $color-footer;
 }
