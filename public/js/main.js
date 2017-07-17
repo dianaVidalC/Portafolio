@@ -14,7 +14,7 @@ $(_=>{
     /* descarga de cv*/
 
     $('.descarga').on('click',_=>{
-        document.location="public/document/cv-Erika Vidal.docx";
+        document.location="document/cv-Erika-Vidal.pdf";
     })
 
     /*boton up*/
