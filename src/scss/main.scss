@@ -16,6 +16,16 @@ body{
   background-color: $color-nav;
 }
 
+nav {
+  .logo-up {
+    width: 2.5rem;
+    margin: 0.2rem 1.7rem;;
+  }
+  .open{
+    display: block;
+  }
+}
+
 .size-text{
   font-size: 1.14rem;
 }
@@ -82,15 +92,32 @@ body{
   }
 }
 
-nav {
-  .logo-up {
-    width: 2.5rem;
-    margin: 0.2rem 1.7rem;;
-  }
-  .open{
-    display: block;
+/*conocimientos*/
+
+.conocimientos {
+  padding: 4rem 2rem;
+  background-color: $color-title;
+  color: #fff;
+
+  .container-skill {
+    padding-top: 2rem;
+    .skill {
+      .size-img {
+        width: 130px;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
   }
 }
+
+@media ("max-width:760px") {
+  .container-skill{
+    padding: 1rem 4.5rem;
+  }
+}
+
+/*proyectos*/
 
 .proyectos {
   padding-top: 2rem;
@@ -168,29 +195,7 @@ nav {
   background-color: #2C3E50;
   color:#fff;
 }
-/*hability*/
 
-.conocimientos {
-  padding: 4rem 2rem;
-  background-color: $color-title;
-  color: #fff;
-
-  .container-skill {
-    padding-top: 2rem;
-    .skill {
-
-      .size-img {
-        width: 150px;
-      }
-    }
-  }
-}
-
-@media ("max-width:760px") {
-  .container-skill{
-    padding: 1rem 4.5rem;
-  }
-}
 /*contact*/
 .contact{
   display: flex;
