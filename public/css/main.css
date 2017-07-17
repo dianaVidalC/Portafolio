@@ -1,104 +1,55 @@
-html, body, .block {
-  height: 100%; }
+/*
+Error: File to import not found or unreadable: _color.
+       Load path: C:/Users/LABORATORIA 0017le/Desktop/Laboratoria/Portafolio/src/scss
+        on line 1 of src/scss/main.scss
 
-body {
-  font-family: 'Open Sans', sans-serif; }
+1: @import "_color";
+2: @import "_fuente";
+3: $flex:flex;
+4: 
+5: *{
+6:   margin:0;
 
-.inicio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../img/keyboard.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .inicio .inicio__divFlex {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .inicio .inicio__divFlex .titulo {
-      font-family: "Philosopher", sans-serif; }
-
-.about {
-  padding: 6rem 2rem; }
-
-nav .logo-up {
-  width: 2.5rem;
-  margin: 0.2rem 1.7rem; }
-nav .open {
-  display: block; }
-
-#proyectos {
-  padding-top: 2rem;
-  overflow: auto; }
-
-.material-placeholder {
-  display: inline-block !important; }
-
-.materialboxed {
-  height: 20rem !important;
-  width: 20rem; }
-
-#contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.card {
-  background-color: #f4f4f4;
-  width: 300px;
-  margin: 10px auto;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.7); }
-
-.card-header {
-  overflow: hidden;
-  width: 100%;
-  max-height: 200px; }
-
-.card-header img {
-  width: 100%; }
-
-.card-content {
-  width: 85%;
-  margin: 35px auto; }
-
-.card-content h3 {
-  font-size: 25px;
-  margin-bottom: 0;
-  color: #303F9F;
-  font-family: 'Montserrat', sans-serif; }
-
-.card-content h4 {
-  font-size: 14px;
-  margin-top: 0;
-  color: #FF5252;
-  font-family: 'Montserrat', sans-serif; }
-
-.card-content p {
-  color: #727272;
-  font-size: 12px;
-  font-family: 'Open Sans', sans-serif; }
-
-.card-footer {
-  border-top: solid 1px #B6B6B6;
-  padding: 5px; }
-
-.card-footer ul {
-  padding: 0;
-  width: 90%;
-  margin: auto;
-  text-align: center; }
-
-.card-footer ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 5px; }
-
-.card-footer ul li i {
-  font-size: 2em;
-  color: #3F51B5; }
-
-.active {
-  background-color: #2C3E50;
-  color: #fff; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+src/scss/main.scss:1
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: _color.\A        Load path: C:/Users/LABORATORIA 0017le/Desktop/Laboratoria/Portafolio/src/scss\A         on line 1 of src/scss/main.scss\A \A 1: @import \"_color\";\A 2: @import \"_fuente\";\A 3: $flex:flex;\A 4: \A 5: *{\A 6:   margin:0;"; }
