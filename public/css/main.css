@@ -29,7 +29,6 @@ nav .open {
   background-repeat: no-repeat;
   background-size: cover; }
   .inicio .inicio__divFlex {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center; }

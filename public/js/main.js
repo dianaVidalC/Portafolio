@@ -14,7 +14,7 @@ $(_=>{
     /* descarga de cv*/
 
     $('.descarga').on('click',_=>{
-        document.location="https://drive.google.com/file/d/0B8DCWyMbksMoMEwwU1FSTDRaTkxpWHNkWW90S1NjLWVGSVcw/view?usp=sharing";
+        document.location="public/document/cv-Erika Vidal.docx";
     })
 
     /*boton up*/
