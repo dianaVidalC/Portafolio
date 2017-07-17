@@ -9,6 +9,8 @@ $(_=>{
 
     $(".button-collapse").sideNav();
 
+    $('.modal').modal();
+
     /* descarga de cv*/
 
     $('.descarga').on('click',_=>{

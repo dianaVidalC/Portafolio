@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Philosopher" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/animations.css">
+    <!--[if lte IE 9]>
+    <link href='public/css/animations-ie-fix.css' rel='stylesheet'>
+    <![endif]-->
     <title>Portafolio</title>
 </head>
 <body>
@@ -22,145 +26,139 @@
                         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
                         <ul class="right hide-on-med-and-down">
                             <li><a class="white-text" href="#inicio">INICIO</a></li>
-                            <li><a class="white-text" href="#about">SOBRE MI</a></li>
-                            <li><a class="white-text" href="#proyects">PROYECTOS</a></li>
-                            <li><a class="white-text" href="#contact">CONTACTO</a></li>
+                            <li><a class="white-text" href="#sobre">SOBRE MI</a></li>
+                            <li><a class="white-text" href="#conocimientos">CONOCIMIENTOS</a></li>
+                            <li><a class="white-text" href="#proyectos">PROYECTOS</a></li>
+                            <li><a class="white-text" href="#contacto">CONTACTO</a></li>
                         </ul>
                         <ul id="mobile-demo" class="side-nav">
                             <li class="bold"><a href="index.html" class="waves-effect waves-teal">Inicio</a></li>
-                            <li class="bold"><a href="#about" class="waves-effect waves-teal">Sobre mi</a></li>
-                            <li class="bold"><a href="#proyects" class="waves-effect waves-teal">Proyectos</a></li>
-                            <li class="bold"><a href="#contact" class="waves-effect waves-teal">Contacto</a></li>
+                            <li class="bold"><a href="#sobre" class="waves-effect waves-teal">Sobre mi</a></li>
+                            <li class="bold"><a href="#conocimientos" class="waves-effect waves-teal">Conocimientos</a></li>
+                            <li class="bold"><a href="#proyectos" class="waves-effect waves-teal">Proyectos</a></li>
+                            <li class="bold"><a href="#contacto" class="waves-effect waves-teal">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
-    <section id="inicio" class="inicio">
-        <div class=" soft inicio__divFlex">
-            <img class="responsive-img" src="public/img/logo-erika.png"/>
-            <h2 class="center-align">Front End Developer Jr.</h2>
-            <div class="inicio__texto hide-on-small-and-down">
-                <ul class="animado">
-                    <li><h2>Soy Erika Vidal</h2></li>
-                    <li><h2>Este es mi Portafolio</h2></li>
-                    <li><h2>Bienvenidos</h2></li>
-                </ul>
+<section id="inicio" class="inicio">
+    <div class="soft inicio__divFlex">
+        <img class="responsive-img" src="public/img/logo-erika.png"/>
+        <h2 class="center-align">Front End Developer Jr.</h2>
+        <div class="inicio__texto hide-on-small-and-down">
+            <ul class="animado">
+                <li><h2>Soy Erika Vidal</h2></li>
+                <li><h2>Este es mi Portafolio</h2></li>
+                <li><h2>Bienvenidos</h2></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="sobre" class="animatedParent sobre">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4">
+                <div><img src="public/img/erika-vidal.jpg" alt="Erika Vidal" class=" animated bounceIn slowest responsive-img thumb"></div>
+            </div>
+            <div class="col s12 offset-m1 m7">
+                <h4>SOBRE MI</h4>
+                <hr>
+                <p class="size-text">Hola soy Erika...
+                    Me encanta el mundo del desarrollo web, lo que puedo ser capaz de hacer con las herramientas de programación, y la satisfacción que queda al terminar un proyecto.
+                    Por supuesto que mi educación continúa, seguiré especializandome en la parte Front End hasta en un futuro llegar a ser Full Stack.</p>
             </div>
         </div>
-    </section>
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m4">
-                    <div><img src="public/img/erika-vidal.jpg" alt="Erika Vidal" class="responsive-img thumb"></div>
+    </div>
+</section>
+<section id="conocimientos" class="animatedParent conocimientos">
+    <h4 class="titulo center">CONOCIMIENTOS</h4>
+    <div class="row">
+        <div class="container-skill animated bounceIn ">
+            <div class="skill soft col s12 m3">
+                <img class="responsive-img size-img" src="public/img/javascript-logo.png" alt="javascript logo">
+            </div>
+            <div class="skill soft col s12 m3">
+                <img class="responsive-img size-img" src="public/img/HTML5iloveimg-resized.png" alt="html logo">
+            </div>
+            <div class="skill soft col s12 m3">
+                <img class="responsive-img size-img" src="public/img/css3.png" alt="css logo">
+            </div>
+            <div class="skill soft col s12 m3">
+                <img class="responsive-img size-img" src="public/img/sass.png" alt="sass logo">
+            </div>
+            <div class="skill soft col s12 m3">
+                <img class="responsive-img size-img" src="public/img/mark-github.png" alt="github logo">
+            </div>
+            <div class="skill soft col s12 m3">
+                <img class="responsive-img size-img" src="public/img/Bootstrap.png" alt="bootstrap logo">
+            </div>
+            <div class="skill soft col s12 m3">
+                <img class="responsive-img size-img" src="public/img/materialize.png" alt="materialize logo">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="proyectos" class="proyectos">
+    <h4 class="center-align">PROYECTOS</h4>
+    <div class="row proyectos__padd">
+            <a href="#modal1"><img class="responsive-img" src="public/img/labcar.jpg"/></a>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h3>Gas Finder</h3>
+                    <h5>Ejercicio de la lección 40 del sprint 5</h5>
+                    <p>Este ejercicio consiste en recrear la aplicación Gas Finder, la cual permite ubicar estaciones de servicio según el distrito en el que te encuentres. Requería el uso de componentes.</p>
+                    <img class="responsive-img" src="public/img/labcar.jpg"/>
                 </div>
-                <div class="col s12 offset-m1 m7">
-                    <h4>SOBRE MI</h4>
-                    <hr>
-                    <p class="size-text">Hola soy Erika...
-                        Me encanta el mundo del desarrollo web, lo que puedo ser capaz de hacer con las herramientas de programación, y la satisfacción que queda al terminar un proyecto.
-                        Por supuesto que mi educación continúa, seguiré especializandome en la parte Front End hasta en un futuro llegar a ser Full Stack.</p>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                </div>
+            </div>
+            <a href="#modal2"><img class="responsive-img" src="public/img/Gas-Finder.jpg"/></a>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h3>Gas Finder</h3>
+                    <h5>Ejercicio de la lección 40 del sprint 5</h5>
+                    <p>Este ejercicio consistía en recrear la aplicación Gas Finder, la cual permite ubicar estaciones de servicio según el distrito en el que te encuentres. Requería el uso de componentes.</p>
+                    <img class="responsive-img" src="public/img/Gas-Finder.jpg"/>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                </div>
+            </div>
+            <a href="#modal3"><img class="responsive-img" src="public/img/pinterest.jpg"/></a>
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <h3>Pinterest</h3>
+                    <h5>Proyecto grupal de la lección 50 del sprint 6 </h5>
+                    <p>El proyecto consistía en recrear la famosa plataforma Pinterest, para lo cual formamos grupos de tres integrantes. Entre los requerimientos estaban el uso del api de pinterest, trabajar con componentes y el uso de herramientas de productividad como Gulp y Bem.</p>
+                    <img class="responsive-img" src="public/img/pinterest.jpg"/>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="conocimientos">
-        <h4 class="titulo center">CONOCIMIENTOS</h4>
-                <div class="row">
-                    <div class="container-skill">
-                    <div class="skill soft col s12 m3">
-                        <img class="responsive-img size-img" src="public/img/javascript-logo.png" alt="javascript logo">
-                    </div>
-                    <div class="skill soft col s12 m3">
-                        <img class="responsive-img size-img" src="public/img/HTML5iloveimg-resized.png" alt="html logo">
-                    </div>
-                    <div class="skill soft col s12 m3">
-                        <img class="responsive-img size-img" src="public/img/css3.png" alt="css logo">
-                    </div>
-                    <div class="skill soft col s12 m3">
-                        <img class="responsive-img size-img" src="public/img/sass.png" alt="sass logo">
-                    </div>
-                    <div class="skill soft col s12 m3">
-                        <img class="responsive-img size-img" src="public/img/mark-github.png" alt="github logo">
-                    </div>
-                    <div class="skill soft col s12 m3">
-                        <img class="responsive-img size-img" src="public/img/Bootstrap.png" alt="bootstrap logo">
-                    </div>
-                    <div class="skill soft col s12 m3">
-                        <img class="responsive-img size-img" src="public/img/materialize.png" alt="materialize logo">
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section id="proyects" class="proyectos">
-        <h4 class="center-align">PROYECTOS</h4>
-            <div class="row proyectos__padd">
-                <div class="col s12 m4">
-                    <div class="card soft">
-                        <div class="card-header">
-                            <img class="responsive-img" src="public/img/labcar.png"/>
-                        </div>
-                        <div class="card-content center-align">
-                            <h3>LabCar</h3>
-                            <h4>Proyecto final del sprint 4</h4>
-                            <p>Para este proyecto debíamos replicar la página Labcar que es una empresa de taxis, para esto debíamos usar la api de google maps y el framework bootstrap.Hicimos este eproyecto luego de 4 meses de estudio.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a class="center-align" href="https://dianavidalc.github.io/ProyectoFinal4/">Ver la página aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card soft">
-                        <div class="card-header">
-                            <img class="responsive-img" src="public/img/Gas-Finder.png"/>
-                        </div>
-                        <div class="card-content center-align">
-                            <h3>Gas Finder</h3>
-                            <h4>Ejercicio de la lección 40 del sprint 5</h4>
-                            <p>Este ejercicio consistía en recrear la aplicación Gas Finder, la cual permite ubicar estaciones de servicio según el distrito en el que te encuentres. Requería el uso de componentes.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a class="center-align" href="https://dianavidalc.github.io/Gas-Finder/">Ver la página aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card soft">
-                        <div class="card-header">
-                            <img class="responsive-img" src="public/img/pinterest.png">
-                        </div>
-                        <div class="card-content center-align">
-                            <h3>Pinterest</h3>
-                            <h4>Proyecto grupal de la lección 50 del sprint 6 </h4>
-                            <p>El proyecto consistía en recrear la famosa plataforma Pinterest, para lo cual formamos grupos de tres integrantes. Entre los requerimientos estaban el uso del api de pinterest, trabajar con componentes y el uso de herramientas de productividad como Gulp y Bem.</p>
-                        </div>
-                        <div class="card-footer center-align">
-                            <a class="center-align" href="https://pinterest-board.herokuapp.com/#!">Ver la página aquí</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="center contact" id="contact">
-        <h4>CONTÁCTAME</h4>
-        <p class="contacto__parrafo">Si tienes alguna duda o quieres contactarte conmigo, mándame un correo o llámame y con gusto te responderé.</p>
-        <div class="left-align">
-            <i class="material-icons">email</i><span> erika.diana.vidal@gmail.com</span></div>
-        <div>
-            <i class="material-icons">phone</i><span> 989835703</span></div>
-        <a class="waves-effect waves-light btn descarga">Descarga mi CV</a>
-        <div class="fixed-action-btn horizontal click-to-toggle btn-up">
-            <a class="btn-floating btn-large icon-up">
-                <i class="material-icons">keyboard_arrow_up</i>
-            </a>
-        </div>
-    </section>
-    <footer></footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="public/js/materialize.min.js"></script>
-    <script src="public/js/main.js"></script>
+</section>
+<section class="center contacto" id="contacto">
+    <h4>CONTÁCTAME</h4>
+    <p class="contacto__parrafo">Si tienes alguna duda o quieres contactarte conmigo, mándame un correo o llámame y con gusto te responderé.</p>
+    <div class="left-align">
+        <i class="material-icons">email</i><span> erika.diana.vidal@gmail.com</span></div>
+    <div>
+        <i class="material-icons">phone</i><span> 989835703</span></div>
+    <a class="waves-effect waves-light btn descarga">Descarga mi CV</a>
+    <div class="fixed-action-btn horizontal click-to-toggle btn-up">
+        <a class="btn-floating btn-large icon-up">
+            <i class="material-icons">keyboard_arrow_up</i>
+        </a>
+    </div>
+</section>
+<footer></footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="public/js/materialize.min.js"></script>
+<script src="public/js/css3-animate-it.js"></script>
+<script src="public/js/main.js"></script>
 </body>
 </html>
