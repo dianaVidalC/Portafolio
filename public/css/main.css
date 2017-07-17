@@ -1,55 +1,124 @@
-/*
-Error: File to import not found or unreadable: _color.
-       Load path: C:/Users/LABORATORIA 0017le/Desktop/Laboratoria/Portafolio/src/scss
-        on line 1 of src/scss/main.scss
+* {
+  margin: 0;
+  padding: 0; }
 
-1: @import "_color";
-2: @import "_fuente";
-3: $flex:flex;
-4: 
-5: *{
-6:   margin:0;
+body {
+  font-family: "Philosopher", sans-serif;
+  color: #452016; }
 
-Backtrace:
-src/scss/main.scss:1
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: _color.\A        Load path: C:/Users/LABORATORIA 0017le/Desktop/Laboratoria/Portafolio/src/scss\A         on line 1 of src/scss/main.scss\A \A 1: @import \"_color\";\A 2: @import \"_fuente\";\A 3: $flex:flex;\A 4: \A 5: *{\A 6:   margin:0;"; }
+.back-color {
+  background-color: rgba(172, 122, 134, 0.5); }
+
+nav .logo-up {
+  width: 2.5rem;
+  margin: 0.2rem 1.7rem; }
+nav .open {
+  display: block; }
+
+.size-text {
+  font-size: 1.14rem; }
+
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  width: 100%;
+  color: #5E3A43;
+  background-image: url("../img/keyboard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .inicio .inicio__divFlex {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .inicio .inicio__texto {
+    display: flex;
+    height: 100px;
+    width: auto;
+    font-size: 16px;
+    line-height: 40px;
+    overflow: hidden; }
+    .inicio .inicio__texto .animado {
+      animation: cambiar 7s infinite; }
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0; }
+  20% {
+    margin-top: 0; }
+  25% {
+    margin-top: -90px; }
+  50% {
+    margin-top: -90px; }
+  55% {
+    margin-top: -180px; }
+  80% {
+    margin-top: -180px; }
+  85% {
+    margin-top: -90px; }
+  95% {
+    margin-top: -90px; }
+  100% {
+    margin-top: 0; } }
+/*sobre*/
+.sobre {
+  padding: 6rem 2rem; }
+  .sobre .thumb {
+    border: 1px solid #452016;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px; }
+  .sobre .thumb:hover {
+    box-shadow: 0 0 2px 1px rgba(21, 41, 51, 0.5); }
+
+/*conocimientos*/
+.conocimientos {
+  padding: 4rem 2rem;
+  background-color: #5E3A43;
+  color: #fff; }
+  .conocimientos .container-skill {
+    padding-top: 2rem; }
+    .conocimientos .container-skill .skill .size-img {
+      width: 130px;
+      margin-left: 3rem;
+      margin-bottom: 3rem; }
+
+@media (max-width: 760px) {
+  .container-skill {
+    padding: 1rem 4.5rem; } }
+/*proyectos*/
+.proyectos {
+  padding-top: 2rem; }
+  .proyectos .proyectos__padd {
+    padding: 4rem; }
+  .proyectos .modal {
+    max-height: 100%;
+    top: 6%; }
+
+.active {
+  background-color: #2C3E50;
+  color: #fff; }
+
+/*contact*/
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(172, 122, 134, 0.5); }
+  .contacto .contacto__parrafo {
+    font-size: 1.4rem; }
+  .contacto .descarga {
+    background-color: #315E37;
+    margin: 2rem; }
+  .contacto .icon-up {
+    background-color: #7AAB81; }
+
+footer {
+  height: 5rem;
+  background-color: #152933; }
+
