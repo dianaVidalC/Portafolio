@@ -45,22 +45,15 @@ nav {
     display: $flex;
     flex-direction: column;
     align-items: center;
-    .icono-down{
+    .inicio__divFlex--margin{
+      margin-bottom:0;
+    }
+    .inicio__divFlex--position{
       position: absolute;
       bottom: 0;
-      i{
+      i {
         font-size: 5rem;
       }
-    }
-  }
-  .inicio__texto{
-    display: $flex;
-    height: 50px;
-    width : auto;
-
-    overflow: hidden;
-    .animado{
-      animation: cambiar 7s infinite;
     }
   }
 }
@@ -101,12 +94,12 @@ nav {
 /*conocimientos*/
 
 .conocimientos {
-  padding: 4rem 2rem;
+  padding: 3rem;
   background-color: $color-title;
   color: #fff;
 
   .container-skill {
-    padding-top: 2rem;
+    padding-top: 3rem;
     .skill {
       .size-img {
         width: 130px;
@@ -126,7 +119,7 @@ nav {
 /*proyectos*/
 
 .proyectos {
-  padding-top: 2rem;
+  padding-top: 3rem;
   .proyectos__padd {
     padding: 4rem;
   }
@@ -143,16 +136,16 @@ nav {
 
 /*contact*/
 .contacto{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding:2rem;
-  background-color: $color-nav;
-  .contacto__parrafo{
-    font-size: 1.4rem;
+  padding-top:4rem;
+  .contacto__informacion{
+    h3{
+      font-family: $font-titles;
+    }
+    .contacto__informacion--margin{
+      margin: 2rem 0;
+    }
   }
   .descarga{
-    background-color: $color-descarga;
     margin:2rem;
   }
   .icon-up{
@@ -161,6 +154,6 @@ nav {
 }
 
 footer{
-  height:5rem;
+  height:4rem;
   background-color: $color-footer;
 }

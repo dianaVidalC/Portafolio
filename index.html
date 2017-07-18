@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="public/icon/style.css">
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Artifika|Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="ico" href="public/img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="public/css/animations.css">
     <!--[if lte IE 9]>
     <link href='public/css/animations-ie-fix.css' rel='stylesheet'>
@@ -45,17 +46,11 @@
         </nav>
     </div>
 <section id="inicio" class="inicio">
-    <div class="soft inicio__divFlex">
+    <div class="inicio__divFlex">
         <img class="responsive-img" src="public/img/logo-erika.png"/>
-        <h1 class="center-align">ERIKA VIDAL</h1>
-        <div class="inicio__texto hide-on-small-and-down">
-            <ul class="animado">
-                <li><h4>Soy Front End Developer Jr.</h4></li>
-                <li><h4>Este es mi Portafolio</h4></li>
-                <li><h4>Bienvenidos</h4></li>
-            </ul>
-        </div>
-        <a class="icono-down" href="#proyectos"><i class="material-icons center-align white-text">keyboard_arrow_down</i></a>
+        <h1 class="inicio__divFlex--margin">ERIKA VIDAL</h1>
+        <h4>Front End Developer Jr.</h4>
+        <a class="inicio__divFlex--position" href="#proyectos"><i class="material-icons center-align white-text">keyboard_arrow_down</i></a>
     </div>
 </section>
 <section id="sobre" class="animatedParent sobre">
@@ -75,7 +70,7 @@
     </div>
 </section>
 <section id="conocimientos" class="animatedParent conocimientos">
-    <h4 class="titulo center">CONOCIMIENTOS</h4>
+    <h3 class="titulo center">CONOCIMIENTOS</h3>
     <div class="row">
         <div class="container-skill animated bounceIn ">
             <div class="skill soft col s12 m3">
@@ -103,7 +98,7 @@
     </div>
 </section>
 <section id="proyectos" class="proyectos">
-    <h4 class="center-align">PROYECTOS</h4>
+    <h3 class="center-align">PROYECTOS</h3>
     <div class="row proyectos__padd">
             <a href="#modal1"><img class="responsive-img" src="public/img/labcar.jpg"/></a>
             <div id="modal1" class="modal">
@@ -144,13 +139,24 @@
         </div>
 </section>
 <section class="center contacto" id="contacto">
-    <h4>CONTÁCTAME</h4>
-    <p class="contacto__parrafo">Si tienes alguna duda o quieres contactarte conmigo, mándame un correo o llámame y con gusto te responderé.</p>
-    <div class="left-align">
-        <i class="material-icons">email</i><span> erika.diana.vidal@gmail.com</span></div>
-    <div>
-        <i class="material-icons">phone</i><span> 989835703</span></div>
-    <a class="waves-effect waves-light btn descarga" href="public/document/cv-Erika-Vidal%20.pdf" download="cv-Erika-Vidal.pdf">Descarga mi CV</a>
+    <div class="row">
+        <div class="contacto__informacion--background col s12 m6">
+            <img class="responsive-img" src="public/img/Ericka_Vidal.JPG" alt="Erika Vidal Front End Developer ">
+        </div>
+        <div class="contacto__informacion col s12 m6">
+            <h3>CONTÁCTAME</h3>
+            <h5>Si tienes alguna duda o quieres contactarte conmigo, mándame un correo o llámame y con gusto te responderé.</h5>
+            <div class="contacto__informacion--margin">
+                <div class="center-align">
+                    <i class="material-icons">email</i><span> erika.diana.vidal@gmail.com</span>
+                </div>
+                <div class="center-align">
+                    <i class="material-icons">phone</i><span> 989835703</span>
+                </div>
+            </div>
+            <a class="waves-effect waves-light btn descarga" href="public/document/cv-Erika-Vidal%20.pdf" download="cv-Erika-Vidal.pdf">Descarga mi CV</a>
+        </div>
+    </div>
     <div class="fixed-action-btn horizontal click-to-toggle btn-up">
         <a class="btn-floating btn-large icon-up">
             <i class="material-icons">keyboard_arrow_up</i>
@@ -158,6 +164,7 @@
     </div>
 </section>
 <footer>
+    <p>ErikaVidal</p>
     <i class="fa fa-facebook-square" aria-hidden="true"></i>
     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
     <i class="fa fa-github-square" aria-hidden="true"></i>

@@ -20,7 +20,6 @@ $(_=>{
     });
 
     $(window).scroll(_=>{
-        console.log($(this).scrollTop());
         if( $(this).scrollTop() > 100 ){
             $('.btn-up').slideDown(300);
         } else {

@@ -4,7 +4,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #452016; }
+  color: #000000; }
 
 .back-color {
   background-color: rgba(109, 77, 77, 0.5); }
@@ -33,18 +33,13 @@ nav .open {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .inicio .inicio__divFlex .icono-down {
+    .inicio .inicio__divFlex .inicio__divFlex--margin {
+      margin-bottom: 0; }
+    .inicio .inicio__divFlex .inicio__divFlex--position {
       position: absolute;
       bottom: 0; }
-      .inicio .inicio__divFlex .icono-down i {
+      .inicio .inicio__divFlex .inicio__divFlex--position i {
         font-size: 5rem; }
-  .inicio .inicio__texto {
-    display: flex;
-    height: 50px;
-    width: auto;
-    overflow: hidden; }
-    .inicio .inicio__texto .animado {
-      animation: cambiar 7s infinite; }
 
 @keyframes cambiar {
   0% {
@@ -69,7 +64,7 @@ nav .open {
 .sobre {
   padding-top: 3rem; }
   .sobre .thumb {
-    border: 1px solid #452016;
+    border: 1px solid #000000;
     border-radius: 4px;
     padding: 5px;
     background-color: white;
@@ -80,11 +75,11 @@ nav .open {
 
 /*conocimientos*/
 .conocimientos {
-  padding: 4rem 2rem;
+  padding: 3rem;
   background-color: #5E3A43;
   color: #fff; }
   .conocimientos .container-skill {
-    padding-top: 2rem; }
+    padding-top: 3rem; }
     .conocimientos .container-skill .skill .size-img {
       width: 130px;
       margin-left: 3rem;
@@ -95,7 +90,7 @@ nav .open {
     padding: 1rem 4.5rem; } }
 /*proyectos*/
 .proyectos {
-  padding-top: 2rem; }
+  padding-top: 3rem; }
   .proyectos .proyectos__padd {
     padding: 4rem; }
   .proyectos .modal {
@@ -108,20 +103,17 @@ nav .open {
 
 /*contact*/
 .contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  background-color: rgba(109, 77, 77, 0.5); }
-  .contacto .contacto__parrafo {
-    font-size: 1.4rem; }
+  padding-top: 4rem; }
+  .contacto .contacto__informacion h3 {
+    font-family: "Oswald", sans-serif; }
+  .contacto .contacto__informacion .contacto__informacion--margin {
+    margin: 2rem 0; }
   .contacto .descarga {
-    background-color: rgba(186, 186, 186, 0.5);
     margin: 2rem; }
   .contacto .icon-up {
     background-color: #6D6D6D; }
 
 footer {
-  height: 5rem;
+  height: 4rem;
   background-color: #333333; }
 
