@@ -11,12 +11,6 @@ $(_=>{
 
     $('.modal').modal();
 
-    /* descarga de cv*/
-
-    $('.descarga').on('click',_=>{
-        document.location="document/cv-Erika-Vidal.pdf";
-    })
-
     /*boton up*/
 
     $('.btn-up').click(function(){

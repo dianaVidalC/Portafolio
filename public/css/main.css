@@ -3,11 +3,11 @@
   padding: 0; }
 
 body {
-  font-family: "Philosopher", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #452016; }
 
 .back-color {
-  background-color: rgba(172, 122, 134, 0.5); }
+  background-color: rgba(109, 77, 77, 0.5); }
 
 nav .logo-up {
   width: 2.5rem;
@@ -19,12 +19,13 @@ nav .open {
   font-size: 1.14rem; }
 
 .inicio {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40rem;
   width: 100%;
-  color: #5E3A43;
+  color: #333333;
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
@@ -32,12 +33,15 @@ nav .open {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .inicio .inicio__divFlex .icono-down {
+      position: absolute;
+      bottom: 0; }
+      .inicio .inicio__divFlex .icono-down i {
+        font-size: 5rem; }
   .inicio .inicio__texto {
     display: flex;
-    height: 100px;
+    height: 50px;
     width: auto;
-    font-size: 16px;
-    line-height: 40px;
     overflow: hidden; }
     .inicio .inicio__texto .animado {
       animation: cambiar 7s infinite; }
@@ -48,22 +52,22 @@ nav .open {
   20% {
     margin-top: 0; }
   25% {
-    margin-top: -90px; }
+    margin-top: -40px; }
   50% {
-    margin-top: -90px; }
+    margin-top: -40px; }
   55% {
-    margin-top: -180px; }
+    margin-top: -80px; }
   80% {
-    margin-top: -180px; }
+    margin-top: -80px; }
   85% {
-    margin-top: -90px; }
+    margin-top: -40px; }
   95% {
-    margin-top: -90px; }
+    margin-top: -40px; }
   100% {
     margin-top: 0; } }
 /*sobre*/
 .sobre {
-  padding: 6rem 2rem; }
+  padding-top: 3rem; }
   .sobre .thumb {
     border: 1px solid #452016;
     border-radius: 4px;
@@ -108,16 +112,16 @@ nav .open {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: rgba(172, 122, 134, 0.5); }
+  background-color: rgba(109, 77, 77, 0.5); }
   .contacto .contacto__parrafo {
     font-size: 1.4rem; }
   .contacto .descarga {
-    background-color: #315E37;
+    background-color: rgba(186, 186, 186, 0.5);
     margin: 2rem; }
   .contacto .icon-up {
-    background-color: #7AAB81; }
+    background-color: #6D6D6D; }
 
 footer {
   height: 5rem;
-  background-color: #152933; }
+  background-color: #333333; }
 
