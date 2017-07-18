@@ -26,7 +26,6 @@ nav .open {
   align-items: center;
   height: 40rem;
   width: 100%;
-  color: #333333;
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
@@ -76,9 +75,7 @@ nav .open {
 
 /*conocimientos*/
 .conocimientos {
-  padding: 3rem;
-  background-color: #5E3A43;
-  color: #fff; }
+  padding: 3rem; }
   .conocimientos .container-skill {
     padding-top: 3rem; }
     .conocimientos .container-skill .skill .size-img {
@@ -91,9 +88,8 @@ nav .open {
     padding: 1rem 4.5rem; } }
 /*proyectos*/
 .proyectos {
+  background-color: rgba(109, 77, 77, 0.5);
   padding-top: 3rem; }
-  .proyectos .proyectos__padd {
-    padding: 4rem; }
   .proyectos .modal {
     max-height: 100%;
     top: 6%; }
