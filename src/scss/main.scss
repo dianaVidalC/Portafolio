@@ -37,7 +37,6 @@ nav {
   align-items: center;
   height: 40rem;
   width: 100%;
-  color: $color-footer;
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,9 +94,6 @@ nav {
 
 .conocimientos {
   padding: 3rem;
-  background-color: $color-title;
-  color: #fff;
-
   .container-skill {
     padding-top: 3rem;
     .skill {
@@ -119,10 +115,8 @@ nav {
 /*proyectos*/
 
 .proyectos {
+  background-color: $color-nav;
   padding-top: 3rem;
-  .proyectos__padd {
-    padding: 4rem;
-  }
   .modal {
     max-height: 100%;
     top:6%;
