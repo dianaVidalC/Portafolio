@@ -8,7 +8,7 @@ $flex:flex;
 }
 
 body{
-  font-family: $font-titles;
+  font-family: $font-parrafo;
   color: $color-text;
 }
 
@@ -31,12 +31,13 @@ nav {
 }
 
 .inicio {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40rem;
   width: 100%;
-  color: $color-title;
+  color: $color-footer;
   background-image: url("../img/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,13 +45,19 @@ nav {
     display: $flex;
     flex-direction: column;
     align-items: center;
+    .icono-down{
+      position: absolute;
+      bottom: 0;
+      i{
+        font-size: 5rem;
+      }
+    }
   }
   .inicio__texto{
     display: $flex;
-    height: 100px;
+    height: 50px;
     width : auto;
-    font-size: 16px;
-    line-height: 40px;
+
     overflow: hidden;
     .animado{
       animation: cambiar 7s infinite;
@@ -62,21 +69,21 @@ nav {
   0%{margin-top: 0;}
   20%{margin-top: 0;}
 
-  25%{margin-top: -90px;}
-  50%{margin-top: -90px;}
+  25%{margin-top: -40px;}
+  50%{margin-top: -40px;}
 
-  55%{margin-top: -180px;}
-  80%{margin-top: -180px;}
+  55%{margin-top: -80px;}
+  80%{margin-top: -80px;}
 
-  85%{margin-top: -90px;}
-  95%{margin-top: -90px;}
+  85%{margin-top: -40px;}
+  95%{margin-top: -40px;}
 
   100%{margin-top: 0;}
 }
 
 /*sobre*/
 .sobre{
-  padding: 6rem 2rem;
+    padding-top: 3rem;
   .thumb{
     border: 1px solid $color-text;
     border-radius: 4px;
@@ -145,7 +152,7 @@ nav {
     font-size: 1.4rem;
   }
   .descarga{
-    background-color: #315E37;
+    background-color: $color-descarga;
     margin:2rem;
   }
   .icon-up{
