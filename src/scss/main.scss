@@ -1,6 +1,17 @@
 @import "_color";
 @import "_fuente";
 $flex:flex;
+$prefixes: "webkit", "moz", "ms", "o", "none";
+
+@mixin prefix($propiedad, $argumento) {
+  @each $prefix in $prefixes {
+    @if $prefix == "none" {
+      #{$propiedad}: $argumento;
+    } @else {
+      -#{$prefix}-#{$propiedad}: $argumento;
+    }
+  }
+}
 
 *{
   margin:0;
@@ -47,6 +58,9 @@ nav {
     .inicio__divFlex--margin{
       margin-bottom:0;
     }
+    .down{
+      @include prefix('animation',3s 1500ms normal);
+    }
     .inicio__divFlex--position{
       position: absolute;
       bottom: 0;
@@ -57,25 +71,9 @@ nav {
   }
 }
 
-@keyframes cambiar {
-  0%{margin-top: 0;}
-  20%{margin-top: 0;}
-
-  25%{margin-top: -40px;}
-  50%{margin-top: -40px;}
-
-  55%{margin-top: -80px;}
-  80%{margin-top: -80px;}
-
-  85%{margin-top: -40px;}
-  95%{margin-top: -40px;}
-
-  100%{margin-top: 0;}
-}
-
 /*sobre*/
 .sobre{
-    padding-top: 3rem;
+    padding-top: 4rem;
   .thumb{
     border: 1px solid $color-text;
     border-radius: 4px;
@@ -96,12 +94,9 @@ nav {
   padding: 3rem;
   .container-skill {
     padding-top: 3rem;
-    .skill {
-      .size-img {
-        width: 130px;
-        margin-left: 3rem;
-        margin-bottom: 3rem;
-      }
+    .size-img {
+      width: 110px;
+      padding: 3rem 0 0 3rem;
     }
   }
 }
@@ -116,7 +111,7 @@ nav {
 
 .proyectos {
   background-color: $color-nav;
-  padding-top: 3rem;
+  padding: 3rem 0 3rem 3rem;
   .modal {
     max-height: 100%;
     top:6%;
@@ -130,7 +125,7 @@ nav {
 
 /*contact*/
 .contacto{
-  padding-top:4rem;
+  padding:4rem 0 2rem 0;
   .contacto__informacion{
     h3{
       font-family: $font-titles;
@@ -152,7 +147,7 @@ footer{
   color: #fff;
   height:5.5rem;
   background-color: $color-footer;
-  .tamaño{
+  .ancho{
     margin:0.5rem 0.5rem 0 0.5rem;
     width: 1.5rem;
   }
