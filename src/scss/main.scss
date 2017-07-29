@@ -16,6 +16,9 @@ $prefixes: "webkit", "moz", "ms", "o", "none";
 *{
   margin:0;
   padding:0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body{
@@ -94,6 +97,31 @@ nav {
   padding: 3rem;
   .container-skill {
     padding-top: 3rem;
+    .skill{
+        .anim-underline {
+        position: relative;
+          padding-bottom: 1rem;
+      }
+      .anim-underline:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+        height: 4px;
+        background-color: #97ae51;
+        animation: width 0.5s;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        border-radius: 2px;
+      }
+      .anim-underline:hover:before {
+         -webkit-transform: scaleX(1);
+         transform: scaleX(1);
+       }
+    }
     .size-img {
       width: 110px;
       padding: 3rem 0 0 3rem;
@@ -111,7 +139,13 @@ nav {
 
 .proyectos {
   background-color: $color-nav;
-  padding: 3rem 0 3rem 3rem;
+  padding: 3rem 0 3rem 0;
+  h3{
+    padding-bottom: 1.5rem;
+  }
+  img{
+    width: 100%;
+  }
   .modal {
     max-height: 100%;
     top:6%;

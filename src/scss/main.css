@@ -1,6 +1,9 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -64,6 +67,26 @@ nav .open {
   padding: 3rem; }
   .conocimientos .container-skill {
     padding-top: 3rem; }
+    .conocimientos .container-skill .skill .anim-underline {
+      position: relative;
+      padding-bottom: 1rem; }
+    .conocimientos .container-skill .skill .anim-underline:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30%;
+      height: 4px;
+      background-color: #97ae51;
+      animation: width 0.5s;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      border-radius: 2px; }
+    .conocimientos .container-skill .skill .anim-underline:hover:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
     .conocimientos .container-skill .size-img {
       width: 110px;
       padding: 3rem 0 0 3rem; }
@@ -74,7 +97,11 @@ nav .open {
 /*proyectos*/
 .proyectos {
   background-color: rgba(109, 77, 77, 0.5);
-  padding: 3rem 0 3rem 3rem; }
+  padding: 3rem 0 3rem 0; }
+  .proyectos h3 {
+    padding-bottom: 1.5rem; }
+  .proyectos img {
+    width: 100%; }
   .proyectos .modal {
     max-height: 100%;
     top: 6%; }
