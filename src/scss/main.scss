@@ -92,14 +92,14 @@ nav {
 }
 
 /*conocimientos*/
-
 .conocimientos {
   padding: 3rem;
   .container-skill {
     padding-top: 3rem;
     .skill{
         .anim-underline {
-        position: relative;
+          position: relative;
+          font-family: $font-titles;
           padding-bottom: 1rem;
       }
       .anim-underline:before {
@@ -109,7 +109,7 @@ nav {
         left: 0;
         width: 30%;
         height: 4px;
-        background-color: #97ae51;
+        background-color: $color-title;
         animation: width 0.5s;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
@@ -121,10 +121,14 @@ nav {
          -webkit-transform: scaleX(1);
          transform: scaleX(1);
        }
+      .icon-star{
+        width: 1.5rem;
+      }
     }
     .size-img {
-      width: 110px;
-      padding: 3rem 0 0 3rem;
+      display: block;
+      width: 120px;
+      padding: 1rem 0 0.5rem 2rem;
     }
   }
 }
@@ -136,22 +140,13 @@ nav {
 }
 
 /*proyectos*/
-
 .proyectos {
   background-color: $color-nav;
   padding: 3rem 0 3rem 0;
   h3{
     padding-bottom: 1.5rem;
   }
-  img{
-    width: 100%;
-  }
-  .modal {
-    max-height: 100%;
-    top:6%;
-  }
 }
-
 .active{
   background-color: #2C3E50;
   color:#fff;
