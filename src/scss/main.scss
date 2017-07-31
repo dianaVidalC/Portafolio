@@ -1,24 +1,29 @@
 @import "_color";
 @import "_fuente";
 $flex:flex;
-$prefixes: "webkit", "moz", "ms", "o", "none";
 
-@mixin prefix($propiedad, $argumento) {
-  @each $prefix in $prefixes {
-    @if $prefix == "none" {
-      #{$propiedad}: $argumento;
-    } @else {
-      -#{$prefix}-#{$propiedad}: $argumento;
-    }
-  }
+@mixin titulo($titles){
+  font-family: $titles;
+}
+
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+  -moz-box-sizing: $sizing;
+  -ms-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 
 *{
   margin:0;
   padding:0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 
 body{
@@ -61,9 +66,6 @@ nav {
     .inicio__divFlex--margin{
       margin-bottom:0;
     }
-    .down{
-      @include prefix('animation',3s 1500ms normal);
-    }
     .inicio__divFlex--position{
       position: absolute;
       bottom: 0;
@@ -76,10 +78,13 @@ nav {
 
 /*sobre*/
 .sobre{
+  h4{
+    @include titulo($font-titles);
+  }
     padding-top: 4rem;
   .thumb{
+    @include border-radius(4px);
     border: 1px solid $color-text;
-    border-radius: 4px;
     padding: 5px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -93,13 +98,16 @@ nav {
 
 /*conocimientos*/
 .conocimientos {
+  h3{
+    @include titulo($font-titles);
+  }
   padding: 3rem;
   .container-skill {
     padding-top: 3rem;
     .skill{
         .anim-underline {
           position: relative;
-          font-family: $font-titles;
+          @include titulo($font-titles);
           padding-bottom: 1rem;
       }
       .anim-underline:before {
@@ -144,6 +152,7 @@ nav {
   background-color: $color-nav;
   padding: 3rem;
   h3{
+    @include titulo($font-titles);
     padding-bottom: 1.5rem;
   }
 }
@@ -157,7 +166,7 @@ nav {
   padding:4rem 0 2rem 0;
   .contacto__informacion{
     h3{
-      font-family: $font-titles;
+      @include titulo($font-titles);
     }
     .contacto__informacion--margin{
       margin: 2rem 0;
