@@ -170,10 +170,13 @@ nav {
     }
     .contacto__informacion--margin{
       margin: 2rem 0;
+      i{
+        font-size: 15px;
+      }
     }
   }
   .descarga{
-    margin:2rem;
+    margin:0 2rem;
   }
   .icon-up{
     background-color: $color-up;
