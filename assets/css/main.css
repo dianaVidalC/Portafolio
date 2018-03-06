@@ -119,8 +119,10 @@ nav .open {
     font-family: "Oswald", sans-serif; }
   .contacto .contacto__informacion .contacto__informacion--margin {
     margin: 2rem 0; }
+    .contacto .contacto__informacion .contacto__informacion--margin i {
+      font-size: 15px; }
   .contacto .descarga {
-    margin: 2rem; }
+    margin: 0 2rem; }
   .contacto .icon-up {
     background-color: #6D6D6D; }
 
