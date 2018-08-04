@@ -105,43 +105,18 @@ nav {
   .container-skill {
     padding-top: 3rem;
     .skill{
-        .anim-underline {
-          position: relative;
-          @include titulo($font-titles);
-          padding-bottom: 1rem;
+      h5 {  
+        @include titulo($font-titles);
+        padding-bottom: 1rem;
       }
-      .anim-underline:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 30%;
-        height: 4px;
-        background-color: $color-title;
-        animation: width 0.5s;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.4s;
-        transition: all 0.4s;
-        border-radius: 2px;
-      }
-      .anim-underline:hover:before {
-         -webkit-transform: scaleX(1);
-         transform: scaleX(1);
-       }
       .icon-star{
         width: 1.5rem;
       }
     }
-    .size-img {
-      display: block;
-      width: 120px;
-      padding: 1rem 0 0.5rem 2rem;
-    }
   }
 }
 
-@media ("max-width:760px") {
+@media (max-width:760px) {
   .container-skill{
     padding: 1rem 4.5rem;
   }
