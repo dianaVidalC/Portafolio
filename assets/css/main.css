@@ -69,33 +69,11 @@ nav .open {
     font-family: "Oswald", sans-serif; }
   .conocimientos .container-skill {
     padding-top: 3rem; }
-    .conocimientos .container-skill .skill .anim-underline {
-      position: relative;
+    .conocimientos .container-skill .skill h5 {
       font-family: "Oswald", sans-serif;
       padding-bottom: 1rem; }
-    .conocimientos .container-skill .skill .anim-underline:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 30%;
-      height: 4px;
-      background-color: #5E3A43;
-      animation: width 0.5s;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.4s;
-      transition: all 0.4s;
-      border-radius: 2px; }
-    .conocimientos .container-skill .skill .anim-underline:hover:before {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1); }
     .conocimientos .container-skill .skill .icon-star {
       width: 1.5rem; }
-    .conocimientos .container-skill .size-img {
-      display: block;
-      width: 120px;
-      padding: 1rem 0 0.5rem 2rem; }
 
 @media (max-width: 760px) {
   .container-skill {
